@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./frofile.css">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Frofile</title>
+</head>
+<body>
+    <div class="app">
+        <div class="card">
+            <div class="card__title">
+                <div class="card__title--img"><img src="./avt.jpg" alt=""></div>
+                <div class="card__title--name">
+                    <h1>Hoàng Chí Thanh</h1>
+                    <div class="veri__check">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                <div class="card__title--description">
+                    <!-- Thêm mô tả nếu cần -->
+                </div>
+            </div>
+            <div class="card__body">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-3">
+                        <div class="card__item">
+                            <a class="card__link"href="">
+                                <span class="link__icon">
+                                    <i class="fab fa-facebook"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-3">
+                        <div class="card__item">
+                            <a class="card__link"href="">
+                                <span class="link__icon">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-3">
+                        <div class="card__item">
+                            <a class="card__link"href="#">
+                                <span class="link__icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-3">
+                        <div class="card__item">
+                            <a class="card__link"href="https://www.tiktok.com/@hcthanh.site">
+                                <span class="link__icon">
+                                    <i class="fab fa-tiktok"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toggle toggle__back">
+                <a href="./">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="toggle toggle__theme">
+                <i class="fas fa-moon"></i>
+            </div>
+            <!-- <div class="button__list mt-10">
+                <div class="row">
+                    <div class="col col-lg-6 mt-10">
+                        <div class="button button__message">
+                            <span>Nhắn tin</span>
+                        </div>
+                    </div>
+                    <div class="col col-lg-6 mt-10">
+                        <div class="button button__message">
+                            <span>Theo dõi</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="card__footer mt-10">
+                <div class="footer__item">
+                    <span>
+                        <i class="fas fa-heart">
+                            455K
+                        </i>
+                    </span>
+                </div>
+                <div class="footer__item">
+                    <span>
+                        <i class="fas fa-heart">
+                            455K
+                        </i>
+                    </span>
+                </div>
+                <div class="footer__item">
+                    <span>
+                        <i class="fas fa-heart">
+                            455K
+                        </i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <audio id="background-music" autoplay loop>
+            <source src="./frofile.mp3" type="audio/mpeg"> 
+            Your browser does not support the audio element.
+        </audio>
+        
+        
+    </div>
+    <script>
+        const toggleTheme = document.querySelector('.toggle__theme');
+        const app = document.querySelector('.app');
+
+        toggleTheme.addEventListener('click', () => {
+            app.classList.toggle('dark');
+        });
+    // window.addEventListener('load', function() {
+    //     const audio = document.getElementById('background-music');
+    //     audio.muted = false; // Unmute the audio after the page loads
+    // });
+    </script>
+</body>
+</html>
